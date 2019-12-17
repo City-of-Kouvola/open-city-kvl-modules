@@ -8,10 +8,10 @@ interface Props {
   src: string;
   modalVisible: boolean;
   modalTimeout: number;
-  onLoadEnd: () => {};
+  onLoadEnd?(): void;
 }
 
-const WebViewModule = (props: Props) => {
+const WebViewModule = (props: Props): JSX.Element => {
   const [modalVisible, setModalVisible] = useState(true);
 
   const onError = (): void => {
