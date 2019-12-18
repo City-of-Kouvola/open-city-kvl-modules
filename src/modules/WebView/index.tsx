@@ -13,7 +13,7 @@ interface Props {
 
 const WebViewModule = (props: Props): JSX.Element => {
   const [modalVisible, setModalVisible] = useState(true);
-
+  const translationData = require('config/locales.json');
   const onError = (): void => {
     console.log('WebView Error');
   };
@@ -32,7 +32,7 @@ const WebViewModule = (props: Props): JSX.Element => {
     <View style={{ flex: 1 }}>
       <PopupModal
         modalVisible={modalVisible}
-        modalText={`Sinut on ohjattu verkko-osoitteeseen ${props.src}`}
+        modalText={`${translationData.finnish.WebView.Redirection} ${props.src}`}
         onClose={hideModal}
       />
       <WebView
