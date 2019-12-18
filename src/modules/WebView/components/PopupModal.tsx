@@ -7,18 +7,18 @@ import {
   Modal,
   StyleSheet,
 } from 'react-native';
-import colors from '../../../config/colors';
+import colors from 'config/colors';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-type Props = {
+interface Props {
   modalVisible: boolean;
   modalText: string;
   onClose(): void;
-};
+}
 
 let styles: any;
 
-const PopupModal = (props: Props) => {
+const PopupModal = (props: Props): JSX.Element => {
   return (
     <Modal
       animationType='fade'
