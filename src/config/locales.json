@@ -1,0 +1,13 @@
+{
+  "english": {
+    "WebView": {
+      "Redirection": "You have been redirected to url"
+    }
+  },
+
+  "finnish": {
+    "WebView": {
+      "Redirection": "Sinut on ohjattu verkko-osoitteeseen"
+    }
+  }
+}
