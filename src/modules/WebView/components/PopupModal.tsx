@@ -7,7 +7,7 @@ import {
   Modal,
   StyleSheet,
 } from 'react-native';
-import colors from 'config/colors';
+import colors from '../../../config/colors';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 interface Props {
