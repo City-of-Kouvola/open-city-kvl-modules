@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View } from 'react-native';
 import { WebView } from 'react-native-webview';
-import PopupModal from 'modules/WebView/components/PopupModal';
+import PopupModal from '../../modules/WebView/components/PopupModal';
 
 interface Props {
   src: string;
@@ -13,7 +13,7 @@ interface Props {
 
 const WebViewModule = (props: Props): JSX.Element => {
   const [modalVisible, setModalVisible] = useState(true);
-  const translationData = require('config/locales.json');
+  const translationData = require('../../config/locales.json');
   const onError = (): void => {
     console.log('WebView Error');
   };
