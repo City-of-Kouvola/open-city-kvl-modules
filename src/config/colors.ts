@@ -1,11 +1,11 @@
 /* @flow */
-export type ColorSet = {
+export interface ColorSet {
   max: string;
   med: string;
   min: string;
   homefg: string;
   homebg: string;
-};
+}
 
 // Colors based on HML brand
 const colors: ColorSet = {
