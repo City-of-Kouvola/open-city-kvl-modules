@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View } from 'react-native';
 import { WebView } from 'react-native-webview';
-import PopupModal from '../../modules/WebView/components/PopupModal';
+import PopupModal from './components/PopupModal';
 
 interface Props {
   src: string;

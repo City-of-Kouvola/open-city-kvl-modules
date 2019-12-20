@@ -16,7 +16,24 @@ interface Props {
   onClose(): void;
 }
 
-let styles: any;
+const styles = {
+  wrapper: {
+    backgroundColor: colors.max + 'EE',
+    padding: 15,
+    flexDirection: 'row',
+    marginTop: 80,
+  },
+  textWrapper: {
+    flex: 2,
+  },
+  modalText: {
+    color: colors.min,
+    justifyContent: 'flex-start',
+  },
+  modalButton: {
+    justifyContent: 'flex-end',
+  },
+};
 
 const PopupModal = (props: Props): JSX.Element => {
   return (
@@ -39,24 +56,5 @@ const PopupModal = (props: Props): JSX.Element => {
     </Modal>
   );
 };
-
-styles = StyleSheet.create({
-  wrapper: {
-    backgroundColor: colors.max + 'EE',
-    padding: 15,
-    flexDirection: 'row',
-    marginTop: 80,
-  },
-  textWrapper: {
-    flex: 2,
-  },
-  modalText: {
-    color: colors.min,
-    justifyContent: 'flex-start',
-  },
-  modalButton: {
-    justifyContent: 'flex-end',
-  },
-});
 
 export default PopupModal;
