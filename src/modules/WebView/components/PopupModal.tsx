@@ -6,6 +6,7 @@ import {
   TouchableWithoutFeedback,
   Modal,
   StyleSheet,
+  Platform,
 } from 'react-native';
 import colors from '../../../config/colors';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -21,7 +22,14 @@ const styles = {
     backgroundColor: colors.max + 'EE',
     padding: 15,
     flexDirection: 'row',
-    marginTop: 80,
+    ...Platform.select({
+      android: {
+        marginTop: 80,
+      },
+      ios: {
+        marginTop: 90,
+      },
+    }),
   },
   textWrapper: {
     flex: 2,
