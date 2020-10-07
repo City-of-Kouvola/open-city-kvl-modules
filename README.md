@@ -20,7 +20,7 @@ Kouvola City modules has been developed using:
 `"react-native": "0.61.4"`
 
 
-## Getting Started For Integration Into Other applications
+## Getting Started For Integration Into Other Applications
 
 1. Make sure your app contains atleast React `16.9.0`, React Native `0.61.4`, react-native-vector-icons `6.6.0` and react-native-webview `8.0.1`
 2. Add `"` `[PACKAGE NAME]` `": "git+` `[REPOSITORY CLONING URL]` `"` like this: `"OpenCityKvlModules": "git+https://github.com/SamuliPunos/open-city-kvl-modules.git"` to your package.json
