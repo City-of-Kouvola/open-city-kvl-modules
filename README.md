@@ -50,4 +50,3 @@ Example usage:
 ```
 
 This code will navigate to https://github.com/punosmobile/open-city-kvl-modules and show a small popup for 5 seconds informing about the redirection.
-LICENSE
