@@ -1,12 +1,12 @@
 # Kouvola City App Modules
 
-This package is used as a modular extension to https://github.com/punosmobile/KouvolaCityApp.git repository for adding additional functionality.
+This package is used as a modular extension to https://github.com/City-of-Kouvola/KouvolaCityApp.git repository for adding additional functionality.
 
 This package is separate from the Kouvola City App, so that it can be used by derivative applications when necessary.
 
 ## Getting Started For Developing Modules
 
-1. Clone the repository with `git clone git@github.com:punosmobile/open-city-kvl-modules.git`
+1. Clone the repository with `git clone git@github.com:City-of-Kouvola/open-city-kvl-modules.git`
 2. `cd open-city-kvl-modules && npm install`
 3. `cd ios && pod install`
 4. `npm start`
@@ -23,7 +23,7 @@ Kouvola City modules has been developed using:
 ## Getting Started For Integration Into Other Applications
 
 1. Make sure your app contains atleast React `16.9.0`, React Native `0.61.4`, react-native-vector-icons `6.6.0` and react-native-webview `8.0.1`
-2. Add `"` `[PACKAGE NAME]` `": "git+` `[REPOSITORY CLONING URL]` `"` like this: `"OpenCityKvlModules": "git+https://github.com/SamuliPunos/open-city-kvl-modules.git"` to your package.json
+2. Add `"` `[PACKAGE NAME]` `": "git+` `[REPOSITORY CLONING URL]` `"` like this: `"OpenCityKvlModules": "git+https://github.com/City-of-Kouvola/open-city-kvl-modules.git"` to your package.json
 3. `npm install`
 4. Add `import { WebViewModule } from '` `[PACKAGE NAME]` `'` to the file you wish to use it in
  
@@ -43,10 +43,10 @@ Example usage:
 
 ```
 <WebViewModule
-    src='https://github.com/punosmobile/open-city-kvl-modules'
+    src='https://github.com/City-of-Kouvola/open-city-kvl-modules'
     modalTimeout={5000}
     modalVisible={true}
 />
 ```
 
-This code will navigate to https://github.com/punosmobile/open-city-kvl-modules and show a small popup for 5 seconds informing about the redirection.
+This code will navigate to https://github.com/City-of-Kouvola/open-city-kvl-modules and show a small popup for 5 seconds informing about the redirection.
