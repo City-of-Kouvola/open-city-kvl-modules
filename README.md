@@ -13,11 +13,13 @@ This package is separate from the Kouvola City App, so that it can be used by de
 
 Kouvola City modules has been developed using:
 
-`"TypeScript”: “3.6.3"`
+`"TypeScript”: “4.5.5"`
 
-`"react": "16.9.0"`
+`"react": "17.0.2"`
 
-`"react-native": "0.61.4"`
+`"react-native": "0.67.1"`
+
+`"node": "16.0.0"`
 
 
 ## Getting Started For Integration Into Other Applications
