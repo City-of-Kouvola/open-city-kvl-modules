@@ -4,12 +4,31 @@ This package is used as a modular extension to https://github.com/City-of-Kouvol
 
 This package is separate from the Kouvola City App, so that it can be used by derivative applications when necessary.
 
-## Getting Started For Developing Modules
+## Getting Started
 
 1. Clone the repository with `git clone git@github.com:City-of-Kouvola/open-city-kvl-modules.git`
-2. `cd open-city-kvl-modules && npm install`
-3. `cd ios && pod install`
-4. `npm start`
+2. Navigate to open-city-kvl-modules and install required dependencies `cd open-city-kvl-modules && npm install`
+3. If doing development for iOS: `cd ios && pod install`
+4. Android: Open Android emulator or connect real device with [USB debugging](https://developer.android.com/studio/debug/dev-options) enabled and Run command `npx react-native run-android` to start the debug version of the application
+6. iOS: Open `ios/OpenCityKvlModules.xcworkspace` in Xcode, select emulator or real device and start the application
+
+## Development
+
+When developing new features/bug fixes:
+
+1. Create new feature/bug fix branch from the `Develop` branch
+2. Add code below to top of the `index.ts` to have modules visible in debug environment 
+```
+import { AppRegistry } from 'react-native';
+import App from './App';
+import { name as appName } from './app.json';
+import WebViewModule from 'modules/WebView';
+
+AppRegistry.registerComponent(appName, () => App);
+```
+3. Develop and test changes locally
+4. Remove step 2 rows before pushing code changes to Github repository
+5. Create Pull Request to the `Develop` branch
 
 Kouvola City modules has been developed using:
 
